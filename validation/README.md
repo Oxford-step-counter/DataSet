@@ -20,8 +20,13 @@ stepcounter_1503502959664.csv front pocket, hard floor
 stepcounter_1503503150186.csv front pocket, hard floor
 stepcounter_1503503318306.csv back pocket, hard floor
 stepcounter_1503503518075.csv back pocket, hard floor
-
-
+stepcounter_1503572116339.csv neck pouch, hard floor
+stepcounter_1503572296043.csv neck puch, hard floor
+stepcounter_1503572567249.csv armband, hard floor
+stepcounter_1503572776963.csv armband, hard floor
+stepcounter_1503573010286.csv purse, hard floor
+stepcounter_1503573264996.csv purse, hard floor
+stepcounter_1503573489803.csv free style
 
 ## License
 
