@@ -1,10 +1,11 @@
 # DataSet
-Data set used to tune the algorithm and validate it
+Data set used to tune the algorithm and validate it.
 
 
 ## Content
 
-* validation contains the traces used to validate the algorithm as implemented in the app
+* `optimisation` contains the data used to optimised the parameters of the algorithm
+* `validation` contains the traces used to validate the algorithm as implemented in the app
 
 ## License
 

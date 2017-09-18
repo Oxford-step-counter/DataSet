@@ -1,0 +1,20 @@
+best parameters set pver 36 tracks:
+
+SELECT * from parameters JOIN 
+(SELECT parameters, avg(accuracy) as avgacc FROM file_results WHERE position != 'SwingingArm' AND NOT(phone='./data/Nexus') AND NOT(phone='./data/Pixel' AND position='InHand') group by parameters order by avgacc DESC) as DD
+ON parameters.parameter_id = DD.parameters
+
+
+performances of parameters set 261 per position:
+
+SELECT parameters, COUNT(accuracy), AVG(accuracy) as avgacc, STDDEV(accuracy) FROM file_results WHERE position = 'ArmBand' AND parameters = 261 AND NOT(phone='./data/Nexus') AND NOT(phone='./data/Pixel' AND position='InHand') group by parameters order by avgacc DESC
+
+(change position to ArmBand, BackPocket, FrontPocket, InHand, NeckPouch, Purse)
+
+
+floor type:
+
+SELECT surface, COUNT(accuracy), phone, AVG(accuracy) as avgacc, STDDEV(accuracy) FROM file_results WHERE surface = 'Hard' AND position = 'InHand' AND parameters = 261  GROUP BY surface, phone ORDER BY avgacc DESC
+
+(change surface to "Carpet" for carpet floor)
+
