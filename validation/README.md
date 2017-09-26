@@ -12,17 +12,7 @@ The columns are:
 
 ## Files description
 
-user 1:
-
-stepcounter_1505740246677.csv hand held, hard floor
-stepcounter_1505741047626.csv hand held, hard floor
-stepcounter_1505741332224.csv front pocket, hard floor
-stepcounter_1505741614989.csv front pocket, hard floor
-stepcounter_1505741827924.csv back pocket, hard floor
-stepcounter_1505742017961.csv back pocket, hard floor
-
-user 2:
-
+File names indicate the user (user1 or user2), the position (hand, frontpocket, backpocket, neck pouch, bag, armband) and the start timestamp (in UNIX timestamp).
 
 
 ## License
