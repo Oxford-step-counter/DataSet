@@ -7,7 +7,7 @@ All files were generated with ground truth.
 
 The columns are:
 
-    timestamp (microsencods since boot), accx, accy, accz, steps as detected by algo, steps as detected by ground truth device, steps as detected by the hardware step counter
+    timestamp (nanosencods since boot), accx, accy, accz, steps as detected by algo, steps as detected by ground truth device, steps as detected by the hardware step counter
 
 
 ## Files description
