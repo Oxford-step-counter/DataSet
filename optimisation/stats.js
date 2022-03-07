@@ -33,16 +33,23 @@ subdirs.forEach(function (subdir, index) {
           let time = parseInt(cols[0])
           let foot1 = parseInt(cols[1])
           let foot2 = parseInt(cols[2])
-          let state = foot1 + foot2
 
-          if (i === 1) {
+          if (i === 0) {
             start = time
-            prev = state
+            prevfoot1 = foot1
+            prevfoot2 = foot2
           } else duration = time - start
-          if (state !== prev) {
+          // If foot1 goes from 0 to 1:
+          if (foot1 - prevfoot1 === 1) {
             steps++
-            prev = state
           }
+          // If foot2 goes from 0 to 1:
+          if (foot2 - prevfoot2 === 1) {
+            steps++
+          }
+
+          prevfoot1 = foot1
+          prevfoot2 = foot2
         }
       }
       duration = Math.floor(duration / 1e9)
